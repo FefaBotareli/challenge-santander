@@ -1,0 +1,53 @@
+body {
+            font-family: 'Roboto', sans-serif;
+}
+.bg-santander {
+            background-image: url('img/fundo\ vermelho.png'); /* Usei um link de imagem para exemplo. Substitua pela sua imagem. */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+ }
+
+ /* Estilo padrão da aba (inativa) */
+.tab-link {
+    color: #6B7280; /* cinza-500 */
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Estilo da aba QUANDO está ativa */
+.tab-link.active {
+    color: #DC2626; /* vermelho-600 */
+    border-bottom-color: #DC2626;
+}
+
+/* Estilo hover para abas inativas */
+.tab-link:not(.active):hover {
+    color: #111827; /* cinza-900 */
+    border-bottom-color: #D1D5DB; /* cinza-300 */
+}
+
+.status-sucesso {
+    color: #16a34a; /* Verde */
+}
+.status-erro {
+    color: #dc2626; /* Vermelho */
+}
+.status-pendente {
+    color: #f59e0b; /* Amarelo/Laranja */
+}
+
+.table-row-selected {
+    background-color: #FEE2E2; /* red-100 do Tailwind */
+    --tw-ring-color: #EF4444; /* red-500 do Tailwind */
+    box-shadow: inset 0 0 0 2px var(--tw-ring-color);
+}
+
+.text-green-600 {
+    color: #16a34a; /* Um verde forte */
+}
+
+.text-red-600 {
+    color: #dc2626; /* Um vermelho forte */
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Plataforma de Análise Santander</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="grid grid-cols-[240px,1fr] grid-rows-[64px,1fr,auto] min-h-screen">
+        
+        <header class="col-span-2 bg-white border-b border-gray-200 flex items-center justify-between px-6 z-10">
+            <div class="flex items-center gap-4">
+                <img src="../assets/img/santander logo - Editado 1.png" alt="Logo Santander" class="h-8 w-auto">
+                <h1 class="text-xl text-gray-700">Plataforma de Análise</h1>
+            </div>
+            <div class="relative">
+                <i data-feather="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                <input type="text" placeholder="Pesquisar" class="w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500">
+            </div>
+        </header>
+
+        <aside class="row-start-2 bg-white border-r border-gray-200 p-4">
+            <nav>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="home.html" class="flex items-center gap-3 p-2 rounded-lg text-red-700 bg-red-50 font-semibold">
+                            <i data-feather="home" class="w-5 h-5"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="analises.html" class="flex items-center gap-3 p-2 rounded-lg text-gray-600 hover:bg-gray-100">
+                            <i data-feather="bar-chart-2" class="w-5 h-5"></i>
+                            <span>Análises</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dados.html" class="flex items-center gap-3 p-2 rounded-lg text-gray-600 hover:bg-gray-100">
+                            <i data-feather="database" class="w-5 h-5"></i>
+                            <span>Dados</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="administrativo.html" class="flex items-center gap-3 p-2 rounded-lg text-gray-600 hover:bg-gray-100">
+                            <i data-feather="settings" class="w-5 h-5"></i>
+                            <span>Administrativo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="acesso.html" class="flex items-center gap-3 p-2 rounded-lg text-gray-600 hover:bg-gray-100">
+                            <i data-feather="shield" class="w-5 h-5"></i>
+                            <span>Acesso</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="row-start-2 p-8 overflow-y-auto">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-800">Olá João!</h2>
+                <p class="text-sm text-gray-500 mt-1">Última sicronização: 20/05/2025, 12:00</p>
+            </div>
+
+            <div class="flex flex-col gap-8 mt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden flex flex-col">
+                        <img src="../assets/img/modelos preditivos.png" alt="Análises Preditivas" class="w-full h-auto aspect-video object-cover">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-lg font-semibold text-gray-900">Análises Preditivas</h3>
+                            <p class="text-sm text-gray-600 mt-2">Gráficos de ciclo de vida e modelos de machine learning.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 border-t">
+                            <a href="analises.html" class="w-full flex items-center justify-center gap-2 bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition-colors">
+                                <i data-feather="eye" class="w-4 h-4"></i>
+                                Visualizar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden flex flex-col">
+                        <img src="../assets/img/conceito-grafico-com-arranjo-de-itens.png" alt="Riscos de Mercado" class="w-full h-auto aspect-video object-cover">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-lg font-semibold text-gray-900">Riscos de Mercado</h3>
+                            <p class="text-sm text-gray-600 mt-2">Principais riscos identificados nos ativos e derivativos.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 border-t">
+                            <a href="analises.html" class="w-full flex items-center justify-center gap-2 bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition-colors">
+                                <i data-feather="eye" class="w-4 h-4"></i>
+                                Visualizar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden flex flex-col">
+                        <img src="../assets/img/conceito-de-controle-de-qualidade-padrao-m 1.png" alt="Dados Recebidos" class="w-full h-auto aspect-video object-cover">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-lg font-semibold text-gray-900">Dados Recebidos</h3>
+                            <p class="text-sm text-gray-600 mt-2">Total de empresas com dados enviados pela API.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 border-t">
+                            <a href="dados.html" class="w-full flex items-center justify-center gap-2 bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition-colors">
+                                <i data-feather="eye" class="w-4 h-4"></i>
+                                Visualizar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden flex flex-col lg:col-start-1">
+                        <img src="../assets/img/usuários ativos.png" alt="Usuários Ativos" class="w-full h-auto aspect-video object-cover">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-lg font-semibold text-gray-900">Usuários Ativos</h3>
+                            <p class="text-sm text-gray-600 mt-2">Número de usuários autenticados na plataforma.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 border-t">
+                            <a href="administrativo.html" class="w-full flex items-center justify-center gap-2 bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition-colors">
+                                <i data-feather="users" class="w-4 h-4"></i>
+                                Gerenciar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden flex flex-col">
+                        <img src="../assets/img/logs recentes.png" alt="Logs Recentes" class="w-full h-auto aspect-video object-cover">
+                        <div class="p-6 flex-grow">
+                            <h3 class="text-lg font-semibold text-gray-900">Logs Recentes</h3>
+                            <p class="text-sm text-gray-600 mt-2">Registros de login e alterações no sistema.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 border-t">
+                            <a href="acesso.html" class="w-full flex items-center justify-center gap-2 bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700 transition-colors">
+                                <i data-feather="file-text" class="w-4 h-4"></i>
+                                Ver Logs
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="col-span-2 bg-[#A80000] text-white flex items-center justify-between px-6 py-3 text-xs z-10">
+            <div>
+                <span>@Sparflow Copyright 2025</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:underline">Privacy and Policy</a>
+                <a href="#" class="hover:underline">Terms Of Use</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+                <a href="#" class="hover:underline">About Us</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="../assets/js/script.js" defer></script>
+</body>
+</html>
